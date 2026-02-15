@@ -1,41 +1,59 @@
+import farmconnectImg from "../assets/farmconnect.jpg";
+import warehouseImg from "../assets/warehouse.jpg";
+import aqiImg from "../assets/aqi.jpg";
+import kidzsphereImg from "../assets/kidzsphere.jpg";
+
 function Projects() {
   return (
-    <section>
-      <h2>Projects</h2>
+    <section aria-label="Projects Section">
+      <h2>Project Showcase</h2>
+
       <div className="grid container">
 
         <div className="card">
-          <h3>EV Range Estimation System</h3>
+          <img src={farmconnectImg} alt="FarmConnect Project" className="project-image" />
+          <h3>FarmConnect</h3>
           <p>
-            Developed a real-time EV driving range estimation model using
-            Fuzzy Logic and TOPSIS. Improved prediction accuracy under
-            varying traffic and environmental conditions.
+            Built a direct-to-consumer e-commerce platform connecting 
+            farmers with buyers and improving supply chain transparency.
           </p>
-          <a href="https://github.com/YOUR_USERNAME/EV_Project" target="_blank">
+          <a href="https://github.com/Vijaymr512/FarmConnect" target="_blank" rel="noopener noreferrer">
             View GitHub
           </a>
         </div>
 
         <div className="card">
+          <img src={warehouseImg} alt="Warehouse Management System" className="project-image" />
           <h3>Warehouse Management System</h3>
           <p>
-            Built a system to digitize warehouse inventory tracking and
-            reduce manual stock errors. Implemented real-time stock updates
-            and admin dashboards.
+            Real-time inventory tracking system with barcode scanning 
+            for improved warehouse efficiency.
           </p>
-          <a href="https://github.com/YOUR_USERNAME/Warehouse_Project" target="_blank">
+          <a href="https://github.com/Vijaymr512/Warehouse-Management-System" target="_blank" rel="noopener noreferrer">
             View GitHub
           </a>
         </div>
 
         <div className="card">
-          <h3>Machine Learning GUI App</h3>
+          <img src={aqiImg} alt="AQI Prediction Tool" className="project-image" />
+          <h3>Air Quality Index Prediction Tool</h3>
           <p>
-            Designed a Streamlit-based regression app supporting CSV uploads
-            and live predictions. Enabled non-technical users to test ML models
-            interactively.
+            ML-powered dashboard using LSTM and Random Forest 
+            to forecast environmental trends.
           </p>
-          <a href="https://github.com/YOUR_USERNAME/ML_GUI_Project" target="_blank">
+          <a href="https://github.com/Vijaymr512/AQI-Prediction" target="_blank" rel="noopener noreferrer">
+            View GitHub
+          </a>
+        </div>
+
+        <div className="card">
+          <img src={kidzsphereImg} alt="KidzSphere Platform" className="project-image" />
+          <h3>KidzSphere</h3>
+          <p>
+            Interactive children’s learning platform with 
+            engaging animations and gamified UI.
+          </p>
+          <a href="https://github.com/Vijaymr512/KidzSphere" target="_blank" rel="noopener noreferrer">
             View GitHub
           </a>
         </div>

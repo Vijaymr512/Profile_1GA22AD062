@@ -1,14 +1,25 @@
+import profilePic from "../assets/profile.jpeg";
+
 function Hero() {
   return (
-    <section>
-      <h1>Vijay M R</h1>
-      <h2>Gesix GeoAI Intern</h2>
-      <p>
-        Passionate Machine Learning and Full Stack Developer with hands-on
-        experience in building AI-powered applications and research-driven
-        solutions. Strong foundation in Python, React, and real-time system
-        development.
-      </p>
+    <section aria-label="Hero Section">
+      <div className="hero-container">
+        
+        <img
+          src={profilePic}
+          alt="Vijay M R Professional Portrait"
+          className="profile-image"
+        />
+
+        <h1>Vijay M R</h1>
+        <h2>Gesix GeoAI Intern | AI & Full Stack Developer</h2>
+
+        <p>
+          Curious mind. Creative thinker. Problem solver.
+          I build intelligent AI systems and scalable web applications 
+          that transform complex challenges into impactful digital solutions.
+        </p>
+      </div>
     </section>
   );
 }
